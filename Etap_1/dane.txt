@@ -1,0 +1,37 @@
+Sławomir Faron, sfaron15@gmail.com , 1ID22A.
+Paweł Sieczka, pawel.sieczka97@gmail.com , 1ID22A.
+
+Temat:
+30. Porównanie wybranych framweworków.
+Porównanie frameworków Angular9 i React, za pomocą aplikacji webowej "Biblioteki".
+
+Technologie:
+Angular9, React, Node.js, MongoDB, Express.js, TypeScript.
+
+Harmonogram:
+1.Stworzenie bazy danych książek w MongoDB Cloud.
+2.Stworzenie serwera w Node.js pobierającego i zapisującego dane w bazie danych za pomocą Express.js.
+3.Stworzenie REST API książek.
+4.Stworzenie aplikacji klienckiej w Angular9.
+5.Stworzenie aplikacji kliecnckiej w React.
+
+Funkcjonalności:
+1.Możliwość dodania książki do biblioteki
+2.Możliwość wypożyczenia książki z biblioteki
+3.Możliwość wyszukiwania książki po tytule, nazwisku autora, ISBN itp.
+4.Ustalenie terminu wypożyczenia.
+5.Filtrowanie książek według jej rodzaju.
+
+Projekt ma na celu porównanie frameworków frontendowych. Spodobu implementacji kodu, porównaniu sposobu pobierania, przetwarzania i zwracania danych.
+Porównanie dostępnych komponentów, mechanizmów kompilacyjnych oraz wydajności.
+
+Wykonanie projektu w oparciu o język programowania TypeScript, przy użyciu technik zorientowanych obiektowo.
+
+Podział prac według punktów harmonogramu:
+Sławomir Faron - 2,3,4
+Paweł Sieczka - 1,2,5
+
+Tematy projektów:
+Przedmiot PSR - jeszcze niewybrany
+Projekt inżynierski Sławomir Faron - Aplikacja webowa wspomagająca zarządzanie zakładem krawieckim.
+Projekt inżynierski Paweł Sieczka - Aplikacja webowa wspomagająca zarządzanie urlopami pracowników.
