@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
+
+.library{
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+    margin: 100px auto;
+    border: 1px solid #ddd;  
+    font-family: 'Roboto Condensed', sans-serif; 
+
+    .search{    
+        display: flex;  
+        padding: 20px 50px;
+        border-bottom: 1px solid #ddd;  
+        .search-book-input{
+            display: block;
+            width: 400px;
+            height: 30px;
+            margin: 5px 0;
+            padding: 3px 6px;
+            border-color:#ddd;
+            border-radius: 4px;
+            outline: none;
+        }   
+        
+        .book-details-list{
+            display: flex;
+            flex-direction: column;
+            margin: 0 30px;
+        }
+
+        .submit{
+            width: 100px;
+            border-color: #eee;
+            font-size: 16px;
+            border-radius: 25px;
+            background-color: rgb(14, 241, 14);
+        }
+
+        .book-type-list{
+            width:160px;
+            margin-left: 50px;
+            border: none;
+        }
+
+    }
+
+    .books{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 15px;
+          
+        .book{
+            width: 240px;
+            height: 450px;
+            text-align: center;
+            .book-img{
+                width: 230px;
+                height: 335px;
+            }
+        }
+    }
+}
+

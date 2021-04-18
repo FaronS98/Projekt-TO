@@ -1,0 +1,36 @@
+<section class="library">
+
+    <section class="search">
+
+        <input class="search-book-input" type="text" placeholder="Enter title or author">
+
+        <div class="book-details-list">
+            <label><input name="detail" type="radio">Author</label>
+            <label><input name="detail" type="radio">Title</label>
+        </div>
+
+        <button class="submit">Serach</button>
+
+        <input class="book-type-list" list="book-type" placeholder="Select the type of book">
+
+        <datalist id="book-type">
+            <option value="Scientific">
+            <option value="Adventure">
+            <option value="Children">
+        </datalist>
+
+    </section>
+
+    <section class="books">
+
+        <div *ngFor="let i of [1,2,3,4,5,6,7]" class="book">
+            <img  class="book-img" src="{{assetsUrl}}book{{i}}.jpg" alt="">
+            <h2 class="tittle">Biden w górach</h2>
+            <p class="author">Donald Trump</p>
+            <p class="type">Horror</p>
+        </div>
+
+    </section>
+
+</section>
+    
