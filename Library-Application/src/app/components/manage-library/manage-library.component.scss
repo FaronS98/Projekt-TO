@@ -1,0 +1,34 @@
+.manage-library{
+    display: flex;
+    justify-content: center;
+    width: 1240px;
+    margin: 100px auto;
+    padding: 100px;
+    color: #555;
+    border: 1px solid #ddd;  
+    font-family: 'Roboto Condensed', sans-serif; 
+    .add-book{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .book-data{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            label{
+                margin-top: 10px;
+                input{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        .submit, h2{
+            margin-top: 10px;
+        }
+    }
+}

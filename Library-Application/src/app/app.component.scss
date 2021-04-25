@@ -1,0 +1,36 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -620px;  
+    width: 1240px;       
+    li{
+        position: absolute;
+        top:50px;
+        width:200px;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style-type: none;        
+        font-family: "Roboto Condensed", sans-serif;
+        cursor: pointer;
+    }
+
+    li:first-of-type{
+        left: 50px;
+    }
+
+    li:last-child{
+        right: 50px;
+    }
+
+    li:hover{
+        top: 30px;
+        line-height: 70px;
+    }
+}
