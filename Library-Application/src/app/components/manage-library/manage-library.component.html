@@ -3,18 +3,18 @@
     <section class="add-book">
         <h2>Add book</h2>
         <section class="book-data">
-            <label>Book name:<input type="text"></label>
-            <label>Author name:<input type="text"></label>
-            <label>Author surname:<input type="text"></label>
-            <label>Type:<input type="text" list="book-type"></label>
+            <label>Book name:<input type="text" [(ngModel)]="book.bookName"></label>
+            <label>Author name:<input type="text" [(ngModel)]="book.authorName"></label>
+            <label>Author surname:<input type="text" [(ngModel)]="book.authorSurname"></label>
+            <label>Type:<input type="text" list="book-type" [(ngModel)]="book.type"></label>
             <datalist id="book-type">
                 <option value="Scientific">
                 <option value="Adventure">
                 <option value="Children">
             </datalist>
-            <label>Photo name:<input type="text"></label>
+            <label>Photo name:<input type="text" [(ngModel)]="book.photoName"></label>
         </section>
-        <button class="submit">Add</button>
+        <button class="submit" (click)="saveBook()">Add</button>
     </section>
 
 </section>

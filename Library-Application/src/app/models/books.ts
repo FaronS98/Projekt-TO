@@ -6,7 +6,7 @@ export class BookItem {
     bookName: string = null;
     authorName: string = null;
     authorSurname: string = null;
-    imageName: string = null;
+    photoName: string = null;
     type: string = null;
 
 
@@ -30,8 +30,8 @@ export class BookItem {
             this.authorSurname = data.authorSurname;
         }
 
-        if (check.assigned(data.imageName)) {
-            this.imageName = data.imageName;
+        if (check.assigned(data.photoName)) {
+            this.photoName = data.photoName;
         }
 
         if (check.assigned(data.type)) {
@@ -53,7 +53,7 @@ export class BookItem {
         data.bookName = this.bookName;
         data.authorName = this.authorName;
         data.authorSurname = this.authorSurname;
-        data.imageName = this.imageName;        
+        data.photoName = this.photoName;        
         data.type = this.type;
 
         return data;

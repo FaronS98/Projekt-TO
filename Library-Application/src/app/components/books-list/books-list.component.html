@@ -23,14 +23,13 @@
 
     <section class="books">
 
-        <div *ngFor="let i of [1,2,3,4,5,6,7]" class="book">
-            <img  class="book-img" src="{{assetsUrl}}book{{i}}.jpg" alt="">
-            <h2 class="tittle">Biden w górach</h2>
-            <p class="author">Donald Trump</p>
-            <p class="type">Horror</p>
+        <div *ngFor="let book of books" class="book">
+            <img  class="book-img" src="{{assetsUrl}}{{book.photoName}}.jpg" alt="">
+            <h2 class="tittle">{{book.bookName}}</h2>
+            <p class="author">{{book.authorName}} {{book.authorSurname}}</p>
+            <p class="type">{{book.type}}</p>
         </div>
 
     </section>
 
 </section>
-    
