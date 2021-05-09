@@ -4,31 +4,25 @@ const router = express.Router();
 
 router.get('/', ( req , res ) =>{
     
-//Adding three sample books to the database
-    for(let i=1; i<4; i++){
-    let name = "book"+i;
-    let price = 1 + (Math.round(Math.random()*10));
+    //Downloading books from the database    
+    Book.find({},(err,data) =>{
+        res.json(data);
+    });
+});
+
+router.post('/', (req, res) =>{
+    const book = req.body.book;
     const bookData = new Book({
-        name: name,
-        price: price
+        bookName: book.bookName,
+        authorName: book.authorName,
+        authorSurname: book.authorSurname,
+        photoName: book.photoName,
+        type: book.type
     });
 
     bookData.save((err) => {
         console.log(err);
     });
-    }
-
-   Book.find({},(err,data) =>{
-        console.log(data);
-    });
-
-    res.render('book', {tittle: "Book"});
-
-    //Downloading books from the database
-    
-    // Book.find({},(err,data) =>{
-    //     res.json(data);
-    // });
 });
 
 module.exports = router;

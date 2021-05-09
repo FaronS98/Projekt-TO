@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://tailor:JJ7lDJFeuDJgBpvK@cluster0.nqpnp.mongodb.n
   useNewUrlParser:true,
   useUnifiedTopology: true
 });
+//mongodb+srv://tailor:JJ7lDJFeuDJgBpvK@cluster0.nqpnp.mongodb.net/Library?retryWrites=true&w=majority
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
