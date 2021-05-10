@@ -16,11 +16,13 @@ public class BookController {
     @Autowired
     BooksService booksService;
 
-    @GetMapping("/")
+    @CrossOrigin(origins = "http://localhost:4200")
+    @GetMapping("")
     @ResponseBody
     public List<Books> getBooks() {return booksService.getBooks() ;}
 
-    @PostMapping("/")
+    @CrossOrigin(origins = "http://localhost:4200")
+    @PostMapping("")
     @ResponseBody
     public Books addModifyBook(@RequestBody BooksDTO booksDTO) {
         return booksService.addModifyBook(booksDTO);
